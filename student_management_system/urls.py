@@ -17,4 +17,8 @@ urlpatterns = [
     #Hod Pamel
     path('Hod/Home', Hod_Views.HOME, name='hod_home'),
 
+    #profile update
+    path('Profile', views.PROFILE, name='profile'),
+    path('Profile/update',views.PROFILE_UPDATE,name='profile_update'),
+
 ] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
